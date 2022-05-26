@@ -8,7 +8,8 @@ module.exports = function(app){
                 name: req.body.name,
                 price: req.body.price,
                 quantity: req.body.quantity,
-                description: req.body.description
+                description: req.body.description,
+                type: req.body.type
             }
         )
         const createdProduct = await product.save();
