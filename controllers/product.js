@@ -34,7 +34,8 @@ module.exports = function(app){
                 price: req.body.price,
                 quantity: req.body.quantity,
                 description: req.body.description,
-                imageUrl: req.body.imageUrl
+                imageUrl: req.body.imageUrl,
+                type: req.body.type
             }
         )
         const createdProduct = await product.save();
